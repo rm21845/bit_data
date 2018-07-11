@@ -1,0 +1,8 @@
+
+Run Machine
+ hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.6.4.jar -file /home/hadoop/Documents/bit_data/src/part2/hadoop/mapper.py -mapper mapper.py -file /home/hadoop/Documents/bit_data/src/part2/hadoop/reducer.py -reducer reducer.py -input ~/input/ -output output.txt
+
+Show output
+hdfs dfs -ls output.txt
+
+
